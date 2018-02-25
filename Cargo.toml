@@ -1,0 +1,16 @@
+[package]
+name = "chanvese"
+version = "0.1.0"
+authors = ["Philipp Ernst <phil23940@yahoo.de>"]
+description = "An implementation of Chan-Vese level-sets."
+repository = "https://github.com/phernst/chanvese"
+license = "MIT/Apache-2.0"
+
+[dependencies]
+distance-transform = "0.1.2"
+image = { version = "0.18.0", optional = true }
+rand = { version = "0.4", optional = true }
+
+[features]
+default = []
+image-utils = ["image", "rand"]
